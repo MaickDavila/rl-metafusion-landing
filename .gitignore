@@ -35,8 +35,14 @@ db.sqlite3-journal
 /staticfiles
 
 # Static & Media
-/static/
+# We track: logos, favicon, and project images
+# Ignore compiled/generated files
 /media/
+static/css/
+static/js/
+!static/img/logo*.png
+!static/img/almacen-logistico-requena/
+!static/favicon.png
 
 # Environment
 .env
@@ -63,3 +69,6 @@ yarn-error.log*
 
 # OS
 Thumbs.db
+
+# Database
+*.sqlite3
