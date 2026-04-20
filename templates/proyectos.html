@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Proyectos | RL Metafusion - Ingeniería y Fabricación Metálica{% endblock %}
+{% block meta_description %}Conoce los proyectos realizados por RL Metafusion. Estructuras metálicas, montaje industrial y soldadura de precisión en Perú.{% endblock %}
+{% block canonical %}https://rlmetafusion.com/proyectos/{% endblock %}
+{% block og_title %}Proyectos | RL Metafusion{% endblock %}
+{% block og_description %}Conoce los proyectos realizados por RL Metafusion. Estructuras metálicas, montaje industrial y soldadura de precisión.{% endblock %}
+{% block twitter_title %}Proyectos | RL Metafusion{% endblock %}
+{% block twitter_description %}Conoce los proyectos realizados por RL Metafusion. Estructuras metálicas, montaje industrial y soldadura de precisión.{% endblock %}
+
+{% block content %}
+    <!-- Banner -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary">Nuestros <span class="text-accent">Proyectos</span></h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                Cada proyecto refleja nuestro compromiso con la calidad, la precisión y la puntualidad.
+                Conoce el detalle de nuestros trabajos realizados.
+            </p>
+            <div class="mt-6 flex items-center justify-center gap-2 text-sm text-gray-500">
+                <a href="{% url 'home' %}" class="hover:text-accent transition-colors">Inicio</a>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                <span class="text-primary font-medium">Proyectos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyecto: Almacén Logístico Requena -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Encabezado del proyecto -->
+            <div class="mb-12">
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                    <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm font-semibold">Estructura Metálica</span>
+                    <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-semibold">Montaje Industrial</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Almacén Logístico - Requena</h2>
+                <div class="flex flex-wrap items-center gap-6 text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>Requena, Perú</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                        <span>Fabricación y Montaje</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Descripción -->
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold text-primary mb-4">Descripción del Proyecto</h3>
+                    <p class="text-gray-600 mb-4">
+                        Diseño, fabricación y montaje de la estructura metálica para un almacén logístico
+                        en la ciudad de Requena. El proyecto incluyó la fabricación completa de columnas,
+                        vigas, correas y arriostramientos, así como el montaje e instalación en sitio.
+                    </p>
+                    <p class="text-gray-600">
+                        Se trabajó con acero estructural de alta resistencia, cumpliendo con las normas
+                        técnicas vigentes. El montaje se realizó con equipos especializados garantizando
+                        la seguridad del personal y la calidad de las uniones soldadas y empernadas.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Detalles</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-primary">Servicio</p>
+                                <p class="text-sm text-gray-600">Fabricación y montaje de estructura metálica</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-primary">Ubicación</p>
+                                <p class="text-sm text-gray-600">Requena, Loreto, Perú</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-primary">Tipo</p>
+                                <p class="text-sm text-gray-600">Almacén logístico industrial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galería -->
+            <div>
+                <h3 class="text-xl font-bold text-primary mb-6">Galería del Proyecto</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+                        <img src="{% static 'img/almacen-logistico-requena/proyecto-1.jpg' %}" alt="Almacén Logístico Requena - Estructura principal" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <p class="text-white font-medium">Estructura principal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+                        <img src="{% static 'img/almacen-logistico-requena/proyecto-2.jpg' %}" alt="Almacén Logístico Requena - Detalle de estructura" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <p class="text-white font-medium">Detalle de estructura</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+                        <img src="{% static 'img/almacen-logistico-requena/proyecto-3.jpg' %}" alt="Almacén Logístico Requena - Montaje de estructuras" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <p class="text-white font-medium">Montaje de estructuras</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+                        <img src="{% static 'img/almacen-logistico-requena/proyecto-4.jpg' %}" alt="Almacén Logístico Requena - Vista general" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <p class="text-white font-medium">Vista general</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+                        <img src="{% static 'img/almacen-logistico-requena/proyecto-5.jpg' %}" alt="Almacén Logístico Requena - Detalle de unión" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <p class="text-white font-medium">Detalle de unión</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+                        <img src="{% static 'img/almacen-logistico-requena/proyecto-6.jpg' %}" alt="Almacén Logístico Requena - Trabajo terminado" class="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <p class="text-white font-medium">Trabajo terminado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                ¿Tienes un proyecto en mente?
+            </h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Contáctanos y te ayudaremos a hacer realidad tu próximo proyecto.
+                Ofrecemos soluciones a medida con los más altos estándares de calidad.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{% url 'home' %}#contacto" class="bg-accent text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors">
+                    Solicitar Cotización
+                </a>
+                <a href="https://wa.me/51993651066?text=Hola%2C%20me%20interesa%20solicitar%20información%20sobre%20sus%20servicios." target="_blank" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-colors">
+                    Escribir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
